@@ -1,5 +1,5 @@
 ## React FullDown Menu 구현 
-## 프로젝트명 : react_claude
+## 프로젝트명 : react_antigravity
 ### 기능 
 - 상단 메뉴 
 - 좌측 메뉴 
@@ -12,7 +12,7 @@
 - 메뉴5 : 메뉴51, 메뉴52, 메뉴53, 메뉴54, 메뉴55 
 ## 아키텍트
 - Language & Framework : React
-- 차후, DB에서 호출된 메뉴테이블을 명칭을 이용할 예정 
+- 차후, DB에서 호출된 메뉴명을 사용할 예정 
 
 ---
 
