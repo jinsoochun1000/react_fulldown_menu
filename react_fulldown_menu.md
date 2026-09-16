@@ -14,14 +14,13 @@
 - Language & Framework : React
 - 차후, DB에서 호출된 메뉴테이블을 명칭을 이용할 예정 
 
+---
 
-react_codex
-react_cursor
-react_claude
+- react_codex
+- react_cursor
+- react_claude
 
-react_antigravity
-react_copilot
+- react_antigravity
+- react_copilot
 
-dotnet run --project net100_antigravity/net100_antigravity.csproj
-dotnet run --project net10_cursor.csproj
-
+---
