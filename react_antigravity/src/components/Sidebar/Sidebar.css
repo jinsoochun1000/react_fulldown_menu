@@ -1,0 +1,233 @@
+.sidebar-container {
+  width: 270px;
+  min-width: 270px;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 68px);
+  position: sticky;
+  top: 68px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.02);
+}
+
+.sidebar-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 사이드바 헤더 */
+.sidebar-header {
+  padding: 24px 20px 20px 20px;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sidebar-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dbeafe;
+}
+
+.sidebar-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-parent-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sidebar-menu-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 2px 0 0 0;
+}
+
+.sidebar-menu-desc {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 10px 0 0 0;
+  line-height: 1.4;
+}
+
+/* 사이드바 본문 */
+.sidebar-body {
+  flex: 1;
+  padding: 16px 14px;
+  overflow-y: auto;
+}
+
+.sidebar-section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  padding: 4px 8px 10px 8px;
+  letter-spacing: 0.03em;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.sidebar-nav-item:hover {
+  background-color: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.sidebar-nav-item.active {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.08);
+}
+
+.sidebar-nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 4px;
+  background-color: #2563eb;
+  border-radius: 0 4px 4px 0;
+}
+
+.nav-item-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.sub-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sidebar-nav-item.active .sub-badge {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.sub-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sub-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #334155;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-nav-item.active .sub-name {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.sub-desc {
+  font-size: 0.74rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 1px;
+}
+
+.nav-arrow-icon {
+  color: #cbd5e1;
+  transition: transform 0.18s ease, color 0.18s ease;
+  flex-shrink: 0;
+}
+
+.sidebar-nav-item:hover .nav-arrow-icon {
+  color: #64748b;
+  transform: translateX(2px);
+}
+
+.sidebar-nav-item.active .nav-arrow-icon {
+  color: #2563eb;
+}
+
+/* 사이드바 하단 */
+.sidebar-footer {
+  padding: 16px;
+  border-top: 1px solid #f1f5f9;
+  background-color: #fafbfc;
+}
+
+.current-context-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.context-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.context-value {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1e293b;
+}
